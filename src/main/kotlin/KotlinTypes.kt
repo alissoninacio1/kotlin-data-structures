@@ -1,8 +1,8 @@
 /**
  * Integers: Byte, Int, Short, Long  (8, 16, 32, 64) (bits)
- * Floating-point numbers: Float, Double
- * Booleans: Boolean
- * Character: Char
+ * Floating-point numbers: Float, Double (32, 64)
+ * Booleans: Boolean (1)
+ * Character: Char (16)
  * Strings: String
  * */
 
