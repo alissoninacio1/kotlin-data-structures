@@ -9,7 +9,12 @@
 fun conversion() {
     val doubleValue: Double = 42.56
     val intValue: Int = doubleValue.toInt()
-    print(intValue)
+    println(intValue)
+
+    val piValue: Double = 3.1415866532
+    val downToFloat: Float = piValue.toFloat()
+
+    println(downToFloat)
 }
 
 
