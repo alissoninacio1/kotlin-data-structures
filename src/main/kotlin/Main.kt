@@ -24,5 +24,8 @@ fun main() {
     //printMaps()
 
     //ControlFlow.kt
-    showControlFlow()
+    //showControlFlow()
+
+    //When.kt
+    //whenCase()
 }
