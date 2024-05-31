@@ -33,6 +33,6 @@ fun main() {
     //showRanges()
 
     //Functions.kt
-    showNumbers()
+    //showNumbers()
 
 }
