@@ -28,4 +28,11 @@ fun main() {
 
     //When.kt
     //whenCase()
+
+    //Ranges.kt
+    //showRanges()
+
+    //Functions.kt
+    showNumbers()
+
 }

@@ -17,6 +17,8 @@
  *  'z' downTo 's' step 2 is equivalent to 'z', 'x', 'v', 't'
  *
  *
+ * until - represents a range [number, until(to this value but not included this one)]
+ *
  **/
 
 
@@ -28,17 +30,33 @@ fun showRanges() {
     val downRange = 10 downTo 1
     val downWithStep = 10 downTo 1 step 2
 
-    println(rangeRegular)
-    println(rangeByTwo)
-    println(excludeRange)
-    println(downRange)
-    println(downWithStep)
-
-    for(i in 1..10) {
+    for( i in rangeRegular) {
         println(i)
     }
 
-    val range = 5 until 15
+    for( i in rangeByTwo) {
+        println(i)
+    }
+
+    for( i in excludeRange) {
+        println(i)
+    }
+
+    for( i in downRange) {
+        println(i)
+    }
+
+    for( i in downWithStep) {
+        println(i)
+    }
+
+    /**
+    for(i in 1..10) {
+        println(i)
+    }
+    */
+
+    val range = 5 until 15 //range[0,15]
     for(i in range) {
         println(i)
     }
