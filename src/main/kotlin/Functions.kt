@@ -57,3 +57,32 @@ fun showNumbers() {
     reference()
 
 }
+
+
+/**
+ *
+ JS code
+function referredFunction() {
+console.log("Reference function");
+}
+
+function reference() {
+const refer = referredFunction;  // Atribui a função referredFunction a variável refer
+refer();  // Chama a função referenciada
+}
+
+reference();
+
+Em ambos os casos, a função é atribuída a uma variável, e essa variável pode ser usada para
+invocar a função. A diferença está na sintaxe específica de cada linguagem para realizar essa atribuição.
+Em Kotlin, você usa o operador :: para obter uma referência à função,
+enquanto em JavaScript você simplesmente atribui a função diretamente à variável.
+
+
+
+
+
+
+
+
+ * */

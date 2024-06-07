@@ -35,4 +35,7 @@ fun main() {
     //Functions.kt
     //showNumbers()
 
+    //Iterator.kt
+    showIterators()
+
 }

@@ -1,5 +1,5 @@
 /**
- * This is like dictionaries/hash-maps, based in a key-value pairs
+ * This is like dictionaries/hash-maps or objects in JS, based in a key-value pairs
  * Allow duplicate maps
  * keys must be uniques
  *
