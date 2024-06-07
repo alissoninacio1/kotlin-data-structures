@@ -56,7 +56,7 @@ fun showRanges() {
     }
     */
 
-    val range = 5 until 15 //range[0,15]
+    val range = 5 until 15 //range[0,15]   5, 6, 7, 8, 9, 10, 11, 12, 13, 14
     for(i in range) {
         println(i)
     }
