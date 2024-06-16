@@ -1,6 +1,11 @@
 In Kotlin, `listOf` and `setOf` create immutable lists and sets, respectively, which do not allow additions,
 removals, or modifications after creation.
+
+
 Conversely, `mutableListOf` and `mutableSetOf` create mutable lists and sets, permitting modifications.
+
 Similarly, `mapOf` creates an immutable map, while `mutableMapOf` creates a mutable map,
 allowing the alteration of key-value pairs.
+
+
 These functions offer varying levels of flexibility and safety for managing collections as needed.

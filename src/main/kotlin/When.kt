@@ -1,6 +1,6 @@
 /**
  *  The When case is similar to switch case.
- *  Use -> in each branch to separate each condition from each action.
+ *  Use '->' in each branch to separate each condition from each action.
  *
  * else - is the default, but no required when all cases are covered before the else statement
  */
