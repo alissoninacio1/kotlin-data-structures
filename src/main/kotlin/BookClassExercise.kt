@@ -7,6 +7,7 @@ class Book(
 {
     init {
         println("primary constructor properties have been initialized")
+        println()
     }
 
     //secondary constructor
@@ -14,6 +15,7 @@ class Book(
 
     init {
         println("second constructor has been initialized")
+        println()
     }
 
     fun printDetails() {

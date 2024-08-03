@@ -13,24 +13,24 @@ fun main() {
     d20()
 }
 
-fun d4(): Unit {
+fun d4() {
     var ran: Int = Random.nextInt(1, 5)
     println(ran)
 }
 
-fun d6(): Unit {
+fun d6() {
     var ran: Int = Random.nextInt(1, 7)
     println(ran)
 }
 
 
-fun d12(): Unit {
+fun d12() {
     var ran: Int = Random.nextInt(1, 13)
     println(ran)
 }
 
 
-fun d20(): Unit {
+fun d20() {
     var ran: Int = Random.nextInt(1, 21)
     println(ran)
 }
