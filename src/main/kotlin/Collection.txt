@@ -8,4 +8,16 @@ Similarly, `mapOf` creates an immutable map, while `mutableMapOf` creates a muta
 allowing the alteration of key-value pairs.
 
 
-These functions offer varying levels of flexibility and safety for managing collections as needed.
+list - keep insertion order, allow duplicate items
+set -  order is not important, no duplicates allowed
+map - key-value pair, unique keys, duplicate values are allowed
+
+
+----> immutable collections:  listOf, setOf
+----> immutable maps: mapOf
+
+
+----> mutable collections: mutableListOf, mutableSetOf
+----> mutable maps: mutableMapOf
+
+
