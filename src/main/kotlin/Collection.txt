@@ -8,16 +8,41 @@ Similarly, `mapOf` creates an immutable map, while `mutableMapOf` creates a muta
 allowing the alteration of key-value pairs.
 
 
-list - keep insertion order, allow duplicate items
-set -  order is not important, no duplicates allowed
+list - keep insertion order, allow duplicate items, index access
+set -  order is not important, no duplicates allowed, index access not allowed
 map - key-value pair, unique keys, duplicate values are allowed
 
-
+//Immutables - cannot be modified
 ----> immutable collections:  listOf, setOf
 ----> immutable maps: mapOf
 
-
+//Mutable - can be modified
 ----> mutable collections: mutableListOf, mutableSetOf
 ----> mutable maps: mutableMapOf
+
+
+
+
+There are also functions for creating collections without any elements:
+ - emptyList(),
+ - emptySet(),
+ - emptyMap().
+
+ When creating empty collections, you should specify the type of elements that the collection will hold
+ val empty = emptyList<String>()
+
+
+
+
+ Collection copying functions, such as
+ -toList(),
+ -toMutableList(),
+ -toSet() and others,
+
+ ***They create a snapshot of a collection at a specific moment.
+ ***Their result is a new collection of the same elements.
+
+
+
 
 

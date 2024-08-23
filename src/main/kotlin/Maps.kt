@@ -32,4 +32,19 @@ fun printMaps() {
     println("Brazil" in worldTitles.keys)
     println(3 in worldTitles.values)
 
+
+    // Immutable map with inferred types
+    val immutableMap = mapOf("key1" to "value1", "key2" to "value2")
+
+    // Immutable map with explicit types
+    val immutableMapWithTypes: Map<String, String> = mapOf("key1" to "value1", "key2" to "value2")
+
+    // Mutable map with inferred types
+    val mutableMap1 = mutableMapOf("key1" to "value1", "key2" to "value2")
+
+    // Mutable map with explicit types
+    val mutableMap2: MutableMap<String, String> = mutableMapOf("key1" to "value1", "key2" to "value2")
+
+
+
 }
