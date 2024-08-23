@@ -1,0 +1,29 @@
+import kotlinx.coroutines.*
+
+//to use knotlinx.corountines, you need ot add some dependencies
+
+fun main() = runBlocking { // Creates a coroutine scope that blocks the main thread until all coroutines are completed
+    println("Start of main function")
+
+    // Launch a new coroutine
+    val job = launch {
+        // Simulate a long-running task
+        delay(1000L) // Suspends the coroutine for 1 second
+        println("Coroutine has finished its task")
+    }
+
+    // Run another coroutine that returns a result
+    val result = async {
+        // Simulate another task
+        delay(500L) // Suspends the coroutine for 0.5 seconds
+        "Result from async coroutine" // Returns the result
+    }
+
+    // Print result from async coroutine
+    println("Result: ${result.await()}") // Waits for the result and prints it
+
+    // Wait for the coroutine launched with `launch` to complete
+    job.join() // Blocks until the coroutine completes
+
+    println("End of main function")
+}
