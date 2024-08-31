@@ -16,14 +16,4 @@ fun main() {
     println("Squared numbers: $squaredNumbers")
     println("Even squares: $evenNumbers")
     println("Sum of even squares: $sumOfEvenSquares")
-
-
-    val numOrder = listOf(1, 2, 3, 4, 5, 6, 7, 8, 10)
-    val middleMultiplied = numOrder
-        .filter {it >= 5 }
-        .map {it * 2} // {element -> element * 2}
-
-    println(middleMultiplied)
-    //[10, 12, 14, 16, 20]
-
 }
