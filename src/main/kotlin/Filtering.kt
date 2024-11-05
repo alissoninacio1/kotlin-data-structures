@@ -10,6 +10,10 @@ fun main() {
     // Filter numbers at even indices
     val indexedFilter = numbers.filterIndexed { index, _ -> index % 2 == 0 }
 
+
+    // In Kotlin, the _ is used as a "discard" parameter. The _ indicates that you don't care about the value and just want to use the index.
+    // It's an elegant way to ignore the value while still accessing the index.
+
     // Filter non-null numbers
     val nullableNumbers = listOf(1, null, 2, null, 3)
     val nonNullNumbers = nullableNumbers.filterNotNull()
