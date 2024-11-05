@@ -29,7 +29,7 @@ Explore my implementations of:
 - **Sorting Algorithms**: Techniques like quicksort, mergesort, and heapsort.
 - **Searching Algorithms**: Methods including binary search and others.
 - **Dynamic Programming**: Solutions to dynamic programming problems.
-- **Graph Algorithms**: Algorithms such as Dijkstra's and A*.
+- **Graph Algorithms**: Algorithms.
 
 ### Kotlin Language Features
 
