@@ -1,0 +1,61 @@
+In Kotlin, `listOf` and `setOf` create immutable lists and sets, respectively, which do not allow additions,
+removals, or modifications after creation.
+
+
+Conversely, `mutableListOf` and `mutableSetOf` create mutable lists and sets, permitting modifications.
+
+Similarly, `mapOf` creates an immutable map, while `mutableMapOf` creates a mutable map,
+allowing the alteration of key-value pairs.
+
+
+list - keep insertion order, allow duplicate items, index access
+set -  order is not important, no duplicates allowed, index access not allowed
+map - key-value pair, unique keys, duplicate values are allowed
+
+//Immutables - cannot be modified
+----> immutable collections:  listOf, setOf
+----> immutable maps: mapOf
+
+//Mutable - can be modified
+----> mutable collections: mutableListOf, mutableSetOf
+----> mutable maps: mutableMapOf
+
+
+
+
+There are also functions for creating collections without any elements:
+ - emptyList(),
+ - emptySet(),
+ - emptyMap().
+
+ When creating empty collections, you should specify the type of elements that the collection will hold
+ val empty = emptyList<String>()
+
+
+
+
+ Collection copying functions, such as
+ -toList(),
+ -toMutableList(),
+ -toSet() and others,
+
+ ***They create a snapshot of a collection at a specific moment.
+ ***Their result is a new collection of the same elements.
+
+
+
+------------ARRAY---------------
+
+Array in Kotlin is a distinct type that provides direct access to array-like data structures.
+Kotlin's Array is similar to arrays in other languages but with additional type safety and features that are specific to Kotlin.
+Kotlin is a distinct type that provides direct access to array-like data structures. Array is a native type.
+
+Use arrays in Kotlin when you have specialized low-level requirements that you need to meet.
+For example, if you have performance requirements beyond what is needed for regular applications,
+or you need to build custom data structures. If you don't have these sorts of restrictions, use collections instead.
+
+---- LISTOF VS ARRAYOF-----------
+listOf: Creates an immutable List, that is, after creation, you cannot add, remove or change elements in the list.
+arrayOf: Creates a mutable Array, where the elements can be modified, but the SIZE of the array is FIXED and cannot be changed after creation - you cannot add elements.
+
+So, Array allows element modification but has a fixed size, while listOf is completely immutable, and mutableListOf allows both modification of elements and dynamic resizing.

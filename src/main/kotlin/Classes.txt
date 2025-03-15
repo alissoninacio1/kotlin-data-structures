@@ -1,0 +1,8 @@
+In Kotlin, data classes are specialized for storing data
+with automatically generated methods like equals(), hashCode(), toString(), and copy(),
+making them similar to JavaScript's objects literals (const obj = {})
+which are flexible key-value pairs but lack these automatic methods.
+
+For more complex structures involving inheritance and polymorphism, Kotlin uses regular classes with clear syntax
+for overriding methods (open and override keywords),
+while JavaScript also supports these concepts with its ES6 class syntax (class, extends, constructor)

@@ -1,0 +1,64 @@
+***These four come from java.
+
+1. ArrayList
+    When to Use:
+        When you need a dynamic array with fast random access.
+        When you expect frequent access and iteration over elements.
+        When you primarily add or remove elements from the end of the list.
+
+    Characteristics:
+        Backed by a dynamic array.
+        Provides fast access to elements via index.
+        Insertion and removal operations are slower compared to LinkedList if they occur at positions other than the end.
+
+
+
+2. LinkedList
+    When to Use:
+        When you need frequent insertions and deletions of elements from the beginning or middle of the list.
+        When you need to maintain a list where elements are frequently added or removed.
+    Characteristics:
+        Backed by a doubly linked list.
+        Slower access to elements via index compared to ArrayList.
+        Faster for operations involving adding or removing elements from the middle of the list.
+
+
+
+3. HashMap
+    When to Use:
+        When you need a key-value mapping where the order of elements does not matter.
+        When you require fast insertion, deletion, and lookup operations.
+    Characteristics:
+        Does not maintain any order of elements.
+        Provides average O(1) time complexity for get and put operations.
+
+
+4. LinkedHashMap
+    When to Use:
+        When you need a key-value mapping that maintains the insertion order.
+        When you want to iterate over elements in the order they were added.
+    Characteristics:
+        Maintains the order of elements based on their insertion.
+        Provides fast access and maintains order, though it has slightly higher overhead compared to HashMap.
+
+
+--------Summary-----------
+Use ArrayList for fast access and operations at the end of the list.
+Use LinkedList for frequent insertions and deletions from the beginning or middle.
+Use HashMap for efficient key-value mappings where order is not required.
+Use LinkedHashMap when you need key-value mappings with insertion order preservation.
+
+
+LinkedList and ArrayList: Directly use these from Java in Kotlin without special Kotlin methods.
+LinkedHashMap and HashMap: Use Kotlin's linkedMapOf() and hashMapOf() to create instances, which are more idiomatic and concise in Kotlin.
+
+
+--------------------KOTLIN VS JAVA COLLECTIONS-------------------------
+Kotlin collections (List, MutableList, Map, MutableMap, etc.)
+    -are generally more concise, safer (due to immutability by default),
+    -and easier to work with thanks to Kotlin's language features.
+
+
+Java collections (ArrayList, LinkedList, HashMap, LinkedHashMap)
+    -offer more granular control and specific optimizations that may be necessary in certain performance-critical applications,
+    - but with more verbosity.
